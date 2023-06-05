@@ -11,6 +11,8 @@ There a - different privilege levels:
 |     Beta |                                        Beta stuff |                   Beta Tester / Developer |
 |   Logger |                 Acces to realtime logs (log page) |       For Developer and authorized People |
 |    Admin | Acces to the Admin page (block, delete ... users) | For the Admins and high authorized People |
+
+
 User levels are stored in the Database levels which are higher than Common are verified with a token (generatet with the Servers private rsa key).
 Loggers and Admins can also directly use tokens to acces the log or admin page. 
 Direct tokens are also generated with the private rsa key and have a time expiration.
